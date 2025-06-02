@@ -1,0 +1,12 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+section {
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    color: white;
+    height: 400px;
+}
