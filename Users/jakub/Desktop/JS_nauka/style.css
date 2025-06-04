@@ -1,7 +1,9 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
+    color: white;
 }
+
 section {
     padding: 20px;
     text-align: center;
@@ -9,4 +11,11 @@ section {
     width: 100%;
     color: white;
     height: 400px;
+}
+input {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    width: 100px;
 }
