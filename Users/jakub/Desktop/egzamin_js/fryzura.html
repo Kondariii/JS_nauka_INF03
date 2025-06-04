@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl8.css">
+    <title>Fryzjerstwo</title>
+</head>
+<body>
+    <section id="lewy-gorny">
+        <h1><a href="index.html">SALON FRYZJERSKI</a></h1>
+    </section>
+    <section id="prawy-gorny">
+        <h4><a href="fryzura.html">Ceny strzyżenia</a></h4>
+        <table>
+            <tr>
+                <th>Długość włosów</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td>Krótkie</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Średnie</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Półdługie</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Długie</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </section>
+    <section id="lewy-srodkowy">
+        <h2>PROMOCJA!</h2>
+        <input type="radio" name="wlosy" class="radio" id="inp1" value="25" checked><label for="inp1">Krótkie</label><br>
+        <input type="radio" name="wlosy" class="radio" id="inp2" value="30"><label for="inp2">Średnie</label><br>
+        <input type="radio" name="wlosy" class="radio" id="inp3" value="40"><label for="inp3">Półdługie</label><br>
+        <input type="radio" name="wlosy" class="radio" id="inp4" value="50"><label for="inp4">Długie</label>
+        <button onclick="oblicz()">Odkryj promocję</button>
+        <p id="wynik"></p>
+    </section>
+    <section id="prawy-dolny">
+        <img src="obraz1.jpg" alt="Fryzjerka">
+    </section>
+    <section id="lewy-dolny">
+        <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Sprawdź promocje!</p>
+        <h4>Kontakt: 444 555 666</h4>
+    </section>
+    <footer>
+        <p>Autor: MEEEE</p>
+    </footer>
+</body>
+<script>
+    function oblicz(){
+    var cena = 0;
+    var radio1 = document.getElementById('inp1');
+    var radio2 = document.getElementById('inp2');
+    var radio3 = document.getElementById('inp3');
+    var radio4 = document.getElementById('inp4');
+    var wynik = document.getElementById('wynik');
+    if(radio1.checked){
+        cena = radio1.value - 10;
+    }
+    if(radio2.checked){
+        cena = radio2.value - 10;
+    }
+    if(radio3.checked){
+        cena = radio3.value - 10;
+    }
+    if(radio4.checked){
+        cena = radio4.value - 10;
+    }
+    wynik.innerHTML = "cena promocyjna: "+cena;
+    }
+</script>
+</html>
