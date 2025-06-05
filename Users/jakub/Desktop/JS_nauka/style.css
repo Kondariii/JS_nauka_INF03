@@ -19,3 +19,17 @@ input {
     color: black;
     width: 100px;
 }
+#div2 {
+    color: black;
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+div > form {
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 10%;
+}
